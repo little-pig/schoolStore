@@ -5,13 +5,11 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var session = require('express-session');
 var bodyParser = require('body-parser');
-
 var formidable = require('formidable');
 var fs = require('fs');
 domain=require('domain');
 
 
-var routes = require('./routes/index');
 var users = require('./routes/users');
 var db = require('./modules/db');
 var order_edit = require('./modules/order_edit');
@@ -19,17 +17,12 @@ var order_search = require('./modules/order_search');
 var user = require('./modules/user');
 var uploade =require('./modules/uploade');
 
-
 var app = express();
-
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 
-
-// uncomment after placing your favicon in /public
-//app.use(favicon(__dirname + '/public/favicon.ico'));
 app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
@@ -43,8 +36,8 @@ app.use(function(err,req,res,next) {
     res.send(500,err.message);
 });
 
-app.use('/', routes);
-app.use('/users', users);
+//事件路由
+
 //order处理
 app.get('/order:personName', order_edit.orderget);
 app.post('/order', order_edit.orderAdd);

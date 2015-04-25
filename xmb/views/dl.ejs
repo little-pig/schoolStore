@@ -9,10 +9,11 @@
 <body>
 <div class="signBox">
     <img src="/images/bg.jpg">
-    <div class="sign">
-        <div class="signTitle">
-            <h1>校卖部</h1>
-        </div>
+    <div class="signBox-inner">
+        <div class="sign">
+            <div class="signTitle">
+                <h1>校卖部</h1>
+            </div>
         <div class="signText">
             <form id="signForm" action="/dl" method="post">
                 用户名：<input type="text" id="username" name="username"><br/>
@@ -22,6 +23,7 @@
                 <p id="warning"><%= errMsg%></p>
             </form>
         </div>
+    </div>
     </div>
 </div>
 <script src="/javascripts/sign.js"></script>

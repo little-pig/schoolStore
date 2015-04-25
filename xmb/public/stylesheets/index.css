@@ -5,6 +5,7 @@
 /*index index index index index index index index index */
 #box{
     width: 100%;
+    min-width: 1024px;
     height: auto;
     position: relative;
     background: #f8f8f8;
@@ -74,6 +75,7 @@
 }
 .lin{
     width: 100%;
+    min-width: 1024px;
     height: 15px;
     position: relative;
     background: #00b188;
@@ -81,6 +83,7 @@
 /*内容content*/
 .content{
     width: 100%;
+    min-width: 1024px;
     height: auto;
     position: relative;
     background: white;
@@ -178,6 +181,7 @@
 /*part2*/
 .content-part2{
     width: 100%;
+    min-width: 1024px;
     position: relative;
     background: #f8f8f8;
     margin-top: 30px;
@@ -285,6 +289,7 @@
 /*nav*/
 .nav{
     width: 100%;
+    min-width: 1024px;
     height: 40px;
     position: relative;
     background: #00b188;
@@ -325,6 +330,12 @@
 /*goods.ejs  goods.ejs  goods.ejs  goods.ejs  goods.ejs  goods.ejs  goods.ejs  */
 
 /*内容content*/
+.goods-content{
+    width: 100%;
+    min-width: 1024px;
+    background: #f8f8f8;
+    min-height: 450px;
+}
 .c-goods{
     width: 1024px;
     height: 350px;

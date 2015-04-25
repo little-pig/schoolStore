@@ -6,6 +6,7 @@ select{outline: none;}
 .hidden{display: none}
 #box{
     width: 100%;
+    min-width: 1024px;
     height: auto;
     position: relative;
     background: #f8f8f8;
@@ -75,6 +76,7 @@ select{outline: none;}
 }
 .lin{
     width: 100%;
+    min-width: 1024px;
     height: 15px;
     position: relative;
     background: #00b188;

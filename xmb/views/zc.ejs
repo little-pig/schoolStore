@@ -9,19 +9,21 @@
 <body>
 <div class="signBox">
     <img src="/images/bg.jpg">
-  <div class="sign">
-      <div class="signTitle">
-          <h1>校卖部</h1>
-      </div>
-      <div class="signText">
-          <form id="signForm" action="/zc" method="post">
-              用 户 名：<input type="text" id="username" name="username"><br/>
-              密码设置：<input type="password" id="password" name="password"><br/>
-              重复密码：<input type="password" id="pswSure"><br/>
-              <button type="submit" onclick="sign()" class="signBtn">Sign up</button>
-              <p class="toSignIn" id="toSignIn">>> to Sign in</p>
-              <p id="warning"><%= errMsg%></p>
-          </form>
+  <div class="signBox-inner">
+      <div class="sign">
+          <div class="signTitle">
+              <h1>校卖部</h1>
+          </div>
+          <div class="signText">
+              <form id="signForm" action="/zc" method="post">
+                  用 户 名：<input type="text" id="username" name="username"><br/>
+                  密码设置：<input type="password" id="password" name="password"><br/>
+                  重复密码：<input type="password" id="pswSure"><br/>
+                  <button type="submit" onclick="sign()" class="signBtn">Sign up</button>
+                  <p class="toSignIn" id="toSignIn">>> to Sign in</p>
+                  <p id="warning"><%= errMsg%></p>
+              </form>
+          </div>
       </div>
   </div>
 </div>

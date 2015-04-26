@@ -1,14 +1,19 @@
 /**
  * Created by lenovo on 2015/4/4.
  */
+window.onload = function(){
+  var cList = document.getElementById('nav-inner-ul').getElementsByTagName('li');
+    for(var i= 1;i<cList.length;i++){
+        cList[i].onclick = function(){
+            var x = this.innerHTML;
+            window.location = '/book_search' + x;
+        }
+    }
+};
 //发布商品
 function getOrder(){
     var personName = document.getElementById('personName').innerHTML;
     window.location = '/order' + personName;
-}
-//分类查询
-function book_search(x){
-    window.location = '/book_search' + x;
 }
 //order_show()
 function order_show(id){

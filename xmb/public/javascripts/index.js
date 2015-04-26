@@ -71,4 +71,14 @@ window.onload = function(){
             alpha == 100 && (clearInterval(timer));
         },20);
     }
+
+    //分类搜索
+    var cList = document.getElementById('c-part1-list').getElementsByTagName('li');
+    for(var i=0;i<cList.length;i++){
+        cList[i].onclick = function(){
+            var x = this.innerHTML;
+            window.location = '/book_search' + x;
+        }
+    }
+
 };
